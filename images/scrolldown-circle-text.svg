@@ -6,12 +6,9 @@
     <!-- Jalur lingkaran tak kasat mata biar teksnya muter pas di tengah -->
     <path id="circlePath" d="M 55,55 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
   </defs>
-  
-  <!-- Panah hijau tengah bawaan asli NMIXX Studio kamu biar tetep presisi -->
-  <path d="M55 42 v26 M49 62 l6 6 l6 -6" stroke="#49a37e" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
 
-  <!-- Teks melingkar warna putih terang anti-gaib dan anti-cache -->
-  <text fill="#ffffff" font-family="'Times New Roman', serif" font-size="9" font-weight="bold" letter-spacing="3.5">
+  <!-- Teks melingkar warna putih terang, TANPA PANAH DI TENGAH -->
+  <text fill="#ffffff" font-family="'Times New Roman', serif" font-size="9.5" font-weight="bold" letter-spacing="3.5">
     <textPath href="#circlePath" startOffset="0%">
       GULIR KE BAWAH • GULIR KE BAWAH • GULIR KE BAWAH •
     </textPath>
