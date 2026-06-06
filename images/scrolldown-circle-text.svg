@@ -10,7 +10,7 @@
   <!-- Teks melingkar warna putih terang, TANPA PANAH DI TENGAH -->
   <text fill="#ffffff" font-family="'Times New Roman', serif" font-size="9.5" font-weight="bold" letter-spacing="3.5">
     <textPath href="#circlePath" startOffset="0%">
-      GULIR KE BAWAH • GULIR KE BAWAH • GULIR KE BAWAH •
+      GULIR KE BAWAH • GULIR KE BAWAH •
     </textPath>
   </text>
 </svg>
