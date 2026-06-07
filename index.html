@@ -672,23 +672,32 @@
         <footer id="footer" class="container s-footer">  
             
             <div class="row s-footer__top row-x-center">
-                <div class="column xl-6 lg-8 md-10 footer-block footer-newsletter">                  
-    
-                    <h5>
-                    Subscribe to our mailing list for <br>
-                    updates, news, and exclusive offers.
-                    </h5>
-    
-                    <div class="subscribe-form">
-                        <form id="mc-form" class="mc-form">
-                            <div class="mc-input-wrap">
-                                <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="Your Email Address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-                                <input type="submit" name="subscribe" value="Subscribe" class="btn btn--primary">
-                                <!-- <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cdb7b577e41181934ed6a6a44_9a91cfe7b3" tabindex="-1" value=""></div> -->
-                            </div> 
-                            <div class="mc-status"></div>
-                        </form>
-                    </div> <!-- end subscribe-form -->
+                <div class="column xl-6 lg-8 md-10 footer-block footer-newsletter">
+                    
+                <div class="subscribe-form" style="background-color: #17181f; padding: 30px; border-radius: 12px; text-align: center; border: 1px solid #2a2b38; max-width: 600px; margin: 0 auto;">
+                    <!-- Judul Box Saran -->
+                    <h4 style="color: #ffeba7; font-weight: 600; margin-bottom: 10px; letter-spacing: 0.5px;">Kritik & Saran Pengembangan</h4>
+                    <p style="color: #c4c3ca; font-size: 14px; margin-bottom: 20px;">
+                        Bantu kami meningkatkan kualitas NMIXX Studio! Tuliskan saran atau fitur baru yang ingin kamu lihat di web ini.
+                    </p>
+                    <!-- Form Input Pengiriman Saran -->
+                    <form onsubmit="alert('Terima kasih atas saran Anda! Kritik dan saran berhasil dikirim.'); this.reset(); return false;" style="display: flex; gap: 10px; justify-content: center; align-items: center; max-width: 500px; margin: 0 auto;">
+                        <input 
+                            type="text" 
+                            placeholder="Ketik saran atau masukan Anda di sini..." 
+                            required 
+                            style="flex: 1; padding: 12px 20px; border-radius: 30px; border: none; background-color: #1f2029; color: #c4c3ca; font-size: 14px; outline: none; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"
+                        >
+                        <button 
+                            type="submit" 
+                            style="background-color: #ffeba7; color: #102770; font-weight: 600; padding: 12px 25px; border-radius: 30px; border: none; cursor: pointer; font-size: 14px; transition: all 0.2s ease-in-out; box-shadow: 0 4px 12px rgba(255,235,167,0.2);"
+                            onmouseover="this.style.backgroundColor='#102770'; this.style.color='#ffeba7';" 
+                            onmouseout="this.style.backgroundColor='#ffeba7'; this.style.color='#102770';"
+                        >
+                            Kirim
+                        </button>
+                    </form>
+                </div> <!-- end subscribe-form -->
 
                 </div> <!-- end footer-newsletter -->
             </div> <!-- end s-footer__top -->         
@@ -740,7 +749,7 @@
                 <div class="column xl-9 lg-12 s-footer__main-end grid-cols grid-cols--wrap">
 
                     <div class="grid-cols__column footer-block">
-                        <h6>Lokasi</h6>
+                        <h6>Lokasi Admin</h6>
                         <p>
                             <strong>SMA Negeri 8 Yogyakarta</strong><br> 
                             Jl. Sidobali No.1, Muja Muju, Kec. Umbulharjo,<br>
@@ -759,20 +768,38 @@
                             </div>
                     </div>
                     
-                    <div class="grid-cols__column footer-block">     
-                        <h6>Kontak</h6>
-                        <ul class="link-list">
-                            <li><a href="mailto:#0">contact@lounge.com</a></li>
-                            <li><a href="tel:+2135551212">(213) 555-123-3456</a></li>
-                        </ul> 
+                    <div class="footer-contact-info" style="flex: 1; min-width: 300px;">
+                        <!-- Judul Kolom -->
+                        <h4 style="color: #ffeba7; letter-spacing: 1px; margin-bottom: 20px; font-weight: 600;">Lokasi Agensi JYP (Agensi NMIXX)</h4>
+                        
+                        <!-- Frame Google Maps Sesuai Link Kamu -->
+                        <div style="width: 100%; max-width: 400px; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.3); border: 2px solid #2a2b38;">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d500.22238421868316!2d127.12876612625298!3d37.52395561563228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca47a55555555%3A0x83f404863f3fb36a!2sJYP%20ENTERTAINMENT!5e0!3m2!1sid!2sid!4v1716000000000!5m2!1sid!2sid" 
+                                width="100%" 
+                                height="220" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
                     </div>
                     
-                    <div class="grid-cols__column footer-block">                   
-                        <h6>Opening Hours</h6>
-                        <ul class="opening-hours">
-                            <li><span class="opening-hours__days">Weekdays</span><span class="opening-hours__time">10:00am - 9:00pm</span></li>
-                            <li><span class="opening-hours__days">Weekends</span><span class="opening-hours__time">9:00am - 10:00pm</span></li>
-                        </ul> 
+                    <div class="footer-col" style="flex: 1; min-width: 300px;">
+                        <h4 style="color: #ffeba7; letter-spacing: 1px; margin-bottom: 20px;">Acappela Terbaru NMIXX</h4>
+                        
+                        <div style="width: 100%; max-width: 400px; border-radius: 8px; overflow: hidden; box-shadow: 0 8px 24px rgba(0,0,0,0.3); border: 2px solid #2a2b38;">
+                            <iframe 
+                                width="100%" 
+                                height="220" 
+                                src="https://www.youtube.com/embed/CWlf36OmK3c" 
+                                title="NMIXX Heavy Serenade Acapella" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>  
 
                 </div> <!-- s-footer__main-end -->                  
