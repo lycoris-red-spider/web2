@@ -1,16 +1,16 @@
-<svg width="110" height="110" viewBox="0 0 110 110" xmlns="http://www.w3.org/2000/svg" style="animation: spin 20s linear infinite; display: block; margin: 0 auto;">
-  <style>
-    @keyframes spin { 100% { transform: rotate(360deg); } }
-  </style>
-  <defs>
-    <!-- Jalur lingkaran tak kasat mata biar teksnya muter pas di tengah -->
-    <path id="circlePath" d="M 55,55 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
-  </defs>
+<s<svg width="110" height="110" viewBox="0 0 110 110" style="animation: spin 20s linear infinite; display: block; margin: 0 auto;">
+    <style>
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+    </style>
+    <defs>
+        <!-- Jalur lingkaran baru yang lebih presisi -->
+        <path id="circlePath" d="M 55, 55 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+    </defs>
 
-  <!-- Teks melingkar warna putih terang, TANPA PANAH DI TENGAH -->
-  <text fill="#ffffff" font-family="'Times New Roman', serif" font-size="9.5" font-weight="bold" letter-spacing="3.5">
-    <textPath href="#circlePath" startOffset="0%">
-      GULIR KE BAWAH • GULIR KE BAWAH •
-    </textPath>
-  </text>
+    <!-- Teks melingkar -->
+    <text fill="#ffffff" font-family="'Arial', sans-serif" font-size="10" font-weight="bold" letter-spacing="2">
+        <textPath href="#circlePath" startOffset="0%">
+            GULIR KE BAWAH • GULIR KE BAWAH • 
+        </textPath>
+    </text>
 </svg>
