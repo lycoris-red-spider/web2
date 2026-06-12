@@ -1,16 +1,16 @@
-<svg width="110" height="110" viewBox="0 0 110 110" style="animation: spin 20s linear infinite; display: block; margin: 0 auto;">
-    <style>
-        @keyframes spin { 100% { transform: rotate(360deg); } }
-    </style>
-    <defs>
-        <!-- Jalur lingkaran baru yang lebih presisi -->
-        <path id="circlePath" d="M 55, 55 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
-    </defs>
-
-    <!-- Teks melingkar -->
-    <text fill="#ffffff" font-family="'Arial', sans-serif" font-size="10" font-weight="bold" letter-spacing="2">
-        <textPath href="#circlePath" startOffset="0%">
-            GULIR KE BAWAH • GULIR KE BAWAH • 
-        </textPath>
-    </text>
-</svg>
+<div style="position: relative; z-index: 10;">
+    <svg width="110" height="110" viewBox="0 0 110 110" style="animation: spin 20s linear infinite; display: block; margin: 0 auto;">
+        <style>
+            @keyframes spin { 
+                from { transform: rotate(0deg); }
+                to { transform: rotate(360deg); } 
+            }
+        </style>
+        <defs>
+            <path id="circlePath" d="M 55, 55 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+        </defs>
+        <text fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="bold" letter-spacing="2">
+            <textPath href="#circlePath">GULIR KE BAWAH • GULIR KE BAWAH •</textPath>
+        </text>
+    </svg>
+</div>
