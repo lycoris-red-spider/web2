@@ -3713,17 +3713,17 @@ td:last-child {
 }
 
 .intro-scroll__circle-text {
-    height             : 100%;
-    width              : 100%;
-    background-image   : url(../images/scrolldown-circle-text.svg);
-    background-repeat  : no-repeat;
+    height: 100%;
+    width: 100%;
+    background-image: url(../images/scrolldown-circle-text.svg);
+    background-repeat: no-repeat;
     background-position: center;
-    background-size    : cover;
-    position           : absolute;
-    top                : 0;
-    left               : 0;
-    animation          : rotation 12s linear infinite;
-    transform-origin   : center;
+    background-size: contain; /* UBAH DARI 'cover' MENJADI 'contain' */
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: rotation 12s linear infinite;
+    transform-origin: center;
 }
 
 .intro-scroll__text {
