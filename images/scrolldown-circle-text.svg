@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110">
     <defs>
-        <path id="circlePath" d="M 55, 55 m -40, 0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" />
+        <path id="circlePath" d="M 55, 55 m -42, 0 a 42,42 0 1,1 84,0 a 42,42 0 1,1 -84,0" />
     </defs>
-    <text fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="bold" letter-spacing="1.8">
+    <text fill="#ffffff" font-family="Arial, sans-serif" font-size="8.2" font-weight="bold" letter-spacing="1.6">
         <textPath href="#circlePath">GULIR KE BAWAH • GULIR KE BAWAH • </textPath>
     </text>
 </svg>
